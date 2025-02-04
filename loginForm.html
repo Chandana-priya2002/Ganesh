@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h2{
+            background-color: rgb(200, 244, 5);
+        }
+        form{
+            background-color:rgb(224, 99, 211);
+        }
+    </style>
+</head>
+<body class="bg-success">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- p is padding, m is margin, b is button=m-->
+         <form class="p-4 border rounded shadow" style="width:300px">
+            <h2 class="text-center mb=4">Login</h2>
+
+            <!-- User ID -->
+             <div class="mb3">
+                <label for="userId" class="form-label">User ID : </label>
+                <input type="text" class="form-control" id="userID" placeholder="Enter valid UserID" required/>
+             </div>
+
+             <!-- Password -->
+              <div class="mb3">
+                <label for="pwd" class="form-label">Password: </label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" required/> <br/> <br/>
+
+                <!-- Login button -->
+                 <button type="submit" class="btn btn-warning w-100">Login</button>
+              </div>
+            </form>
+    </div>   
+</body>
+</html>

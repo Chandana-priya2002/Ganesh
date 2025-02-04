@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Positioning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .box{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            color: bisque;
+            text-align: center;
+            border-radius: 10px;
+        }
+        h1{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+
+        <h1 class="text-center "> Positioning - Text</h1> <br/>
+
+        <!-- Static Position -- Default -->
+        <p class="box bg-primary position-static">Static box</p>
+
+        <!-- position-relative is related / based on previous html item.. -->
+        <p class="box bg-danger position-relative" style="top:10px; left:40px">This is a relative position</p>
+
+        <!-- Specifies the absolute position -->
+        <p class="box bg-warning position-obsolute" style="top:200px; left:50px">Absolute box...</p>
+
+
+    </div>
+</body>
+</html>
